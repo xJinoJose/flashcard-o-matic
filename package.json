@@ -1,5 +1,4 @@
 {
-  "homepage": ".",
   "name": "project-flashcards",
   "version": "0.1.0",
   "private": true,
@@ -21,7 +20,9 @@
     "start:server": "json-server --no-cors ./data/db.json",
     "start:solution": "npm run -it docker:build && npm run docker:run",
     "test": "react-scripts test",
-    "test:solution": "npm run docker:build && npm run docker:test"
+    "test:solution": "npm run docker:build && npm run docker:test",
+    "predeploy": "npm run build",
+    "deploy": "vercel --prod"
   },
   "eslintConfig": {
     "extends": [

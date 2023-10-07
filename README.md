@@ -1,33 +1,37 @@
-# Getting Started with Create React App
+# Flashcard-O-Matic 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Project description: Flashcard-o-matic
 
-In the project directory, you can run:
+A local school has decided to put together a flash card application, Flashcard-o-matic, to help their students study online. Teachers will use this application to create decks of flash cards for the subjects that they teach, and students will study the decks. The school needs you to build the application that the students and teachers will use.
 
-### `npm start`
+### Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [demo](https://flashcard-o-matic-f9511jgn9-xjinojose.vercel.app/) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Express API
 
-### `npm test`
+Open [flashcard-o-matic API](https://json-server-vercel-alpha-six.vercel.app/) to view it in your browser.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Note:
+To run it locally, change the value of API_BASE_URL in utils/api/index.js to http://localhost:5000 (see below)
 
-### `npm run build`
+const API_BASE_URL = process.env.API_BASE_URL || "https://json-server-vercel-alpha-six.vercel.app";
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `Home`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Home Page](./images/home-screen.png)
+
+- **Create Deck**: prompts user to enter the deck name and description.
+- **Decks**: display the decks.
+- **View**: shows the deck information and the cards in that deck.
+- **Study**: direct the users to an study session using the deck's flashcards.
+- **Delete**: deletes the deck.
+
+
 
 ### `npm run eject`
 

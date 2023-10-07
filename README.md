@@ -31,7 +31,13 @@ const API_BASE_URL = process.env.API_BASE_URL || "https://json-server-vercel-alp
 - **Study**: direct the users to an study session using the deck's flashcards.
 - **Delete**: deletes the deck.
 
+### `Create Deck`
 
+![Create Deck](./images/createdeck-screen.png)
+
+### `View Deck`
+
+![View Deck](./images/viewdeck-screen.png)
 
 ### `npm run eject`
 

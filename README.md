@@ -25,7 +25,7 @@ const API_BASE_URL = process.env.API_BASE_URL || "https://json-server-vercel-alp
 
 ![Home Page](./images/home-screen.png)
 
-- **Create Deck**: prompts user to enter the deck name and description.
+- **Create Deck**: prompts the user to enter the deck name and description.
 - **Decks**: display the decks.
 - **View**: shows the deck information and the cards in that deck.
 - **Study**: direct the users to an study session using the deck's flashcards.
@@ -38,6 +38,16 @@ const API_BASE_URL = process.env.API_BASE_URL || "https://json-server-vercel-alp
 ### `View Deck`
 
 ![View Deck](./images/viewdeck-screen.png)
+
+**Deck**
+- **Edit**: prompts the user to change the deck name and/or description.
+- **Study**: direct the users to an study session using the deck's flashcards.
+- **Add Cards**: add a card to the deck.
+- **Delete**: deletes the entire deck.
+
+**Cards**
+- **Edit**: Edit the card's front and/or back.
+- **Delete**: Deletes the card.
 
 ### `npm run eject`
 
